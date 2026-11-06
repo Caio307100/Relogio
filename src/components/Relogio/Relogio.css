@@ -1,0 +1,31 @@
+#Relogio{
+    display: inline-flex;
+    height: fit-content;
+    margin-bottom: 5rem;
+    background-color: rgb(56, 56, 56);
+    padding: 3rem;
+    border-radius: 3rem;
+}
+#Relogio p{
+    color: white;
+    font-family: "Tiny5 Duo", sans-serif;
+    font-size: 3rem;
+}
+@media (max-width: 800px) {
+    #Relogio p{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    #Relogio{
+        padding: 2rem;
+    }
+}
+@media (max-width: 530px) {
+    #Relogio{
+        padding: 1rem;
+    }
+    #Relogio p{
+        font-size: 1.5rem;
+    }
+}

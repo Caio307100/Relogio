@@ -1,0 +1,50 @@
+#Seletor{
+    height: 3.5rem; width: 15rem;
+    cursor: pointer;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 2rem;
+}
+#Seletor p{
+    color: white;
+    font-size: 1.3rem;
+}
+#Seletor div{
+    display: none;
+}
+.Padrao{
+    width: 15rem; height: 3.5rem;
+    border-bottom: 2px solid grey;
+}
+.Padrao:first-child{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.Padrao:last-child{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom: 0px;
+}
+#Preto{
+    background-color: black;
+}
+#Branco{
+    background-color: white;
+}
+@media (max-width: 700px){
+    #Seletor{
+        height: 3.5rem; width: 10rem;
+    }
+    #Seletor p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 530px) {
+    #Seletor{
+        width: 7.5rem;
+        margin-right: 0.3rem;
+    }
+    #Seletor p{
+        font-size: 0.80rem;
+    }
+}
