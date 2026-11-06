@@ -7,7 +7,7 @@ function mostrarCores(){
     }
     else{
         mostrandoCor = true
-        const seletor = document.querySelector("#Seletor"); let p = seletor.querySelector("p"); let div = seletor.uerySelector("div"); const Alldiv = div.querySelectorAll("div")
+        const seletor = document.querySelector("#Seletor"); let p = seletor.querySelector("p"); let div = seletor.querySelector("div"); const Alldiv = div.querySelectorAll("div")
         p.remove()
         div.remove()
         const seletorHeight = getComputedStyle(seletor).height
@@ -17,7 +17,6 @@ function mostrarCores(){
         seletor.onClick = null
         for (let x of Alldiv){
             x.style.display = "block"
-            x.style.width = getComputedStyle(seletor).width
         }
         for (let x of Alldiv){
             seletor.appendChild(x)

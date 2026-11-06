@@ -13,7 +13,7 @@
     display: none;
 }
 .Padrao{
-    width: 15rem; height: 3.5rem;
+    width: 100%; height: 3.5rem;
     border-bottom: 2px solid grey;
 }
 .Padrao:first-child{
@@ -43,6 +43,7 @@
     #Seletor{
         width: 7.5rem;
         margin-right: 0.3rem;
+        margin-top: 0.5rem;
     }
     #Seletor p{
         font-size: 0.80rem;
