@@ -7,20 +7,21 @@ function mostrarCores(){
     }
     else{
         mostrandoCor = true
-        const seletor = document.querySelector("#Seletor"); let p = seletor.querySelector("p"); let div = seletor.querySelector("div"); const Alldiv = div.querySelectorAll("div")
+        const seletor = document.querySelector("#Seletor"); let p = seletor.querySelector("p"); let div = seletor.uerySelector("div"); const Alldiv = div.querySelectorAll("div")
         p.remove()
-        for (let x of Alldiv){
-            x.style.display = "block"
-        }
         div.remove()
-        for (let x of Alldiv){
-            seletor.appendChild(x)
-        }
         const seletorHeight = getComputedStyle(seletor).height
         const heightFinal = parseInt(seletorHeight.replace("px", ""))
         seletor.style.height = `${heightFinal * 2}px`
         seletor.style.cursor = "default"
         seletor.onClick = null
+        for (let x of Alldiv){
+            x.style.display = "block"
+            x.style.width = getComputedStyle(seletor).width
+        }
+        for (let x of Alldiv){
+            seletor.appendChild(x)
+        }
     }
 }
 
