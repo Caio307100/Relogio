@@ -1,7 +1,8 @@
 import './Seletor.css'
 
 let mostrandoCor = false
-
+let branco = false
+let preto = false
 function mostrarCores(){
     if (mostrandoCor){
     }
@@ -17,10 +18,19 @@ function mostrarCores(){
         seletor.onClick = null
         for (let x of Alldiv){
             x.style.display = "block"
+            x.onclick = (event) => {mudarCor(event)}
         }
         for (let x of Alldiv){
             seletor.appendChild(x)
         }
+    }
+}
+
+function mudarCor(event){
+    const elemento = event.target
+    const id = elemento.id
+    if (id == "Branco"){
+        
     }
 }
 
