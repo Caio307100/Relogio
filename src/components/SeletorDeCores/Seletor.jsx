@@ -33,10 +33,10 @@ function mudarCor(event){
         let AllH1 = document.querySelectorAll("h1")
         let AllP = document.querySelectorAll("p")
         let header = document.querySelector("header")
-        for (x of AllH1){
+        for (let x of AllH1){
             x.style.color = "black"
         }
-        for (x of AllP){
+        for (let x of AllP){
             x.style.color = "black"
         }
         header.style.backgroundImage = "linear-gradient(to top, rgb(196, 196, 196), white), rgb(74, 74, 74), grey, black"
